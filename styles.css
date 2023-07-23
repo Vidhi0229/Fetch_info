@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.contain{
+    display: flex;
+}
+
+.box1{
+    width: 32vw;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+}
+.box{
+    width: 35vw;
+    height: 60vh;
+    background-color: rgb(41 58 68);
+    border-radius: 5%;
+}
+
+
+.contain2{
+    display: block;
+    width: 22vw;
+    height: 18vh;
+}
+
+.box3{
+    width: 21vw;
+    height: 14vh;
+    background-color:rgb(41 58 68);
+}
+
+.box5{
+    display: block;
+    color:  rgb(41 58 68);
+    background-image: url(img/pawel-czerwinski-IcOg3D9yh0o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    height: 14vh;
+}
+
+
+.box6{
+    display: block;
+    background-color: rgb(41 58 68);
+    width: 22vw;
+    height: 5vh;
+}
+.button{
+    width: 12vw;
+    height: 8vh;
+    outline: none;
+    border: none;
+    border-radius: 16vh;
+    font-size: 2vh;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    padding: 0vh;
+    background-color: rgb(183 241 241);
+}
+.box2{
+    display: block;
+    color:  rgb(41 58 68);
+    width: 35vw;
+    height: 9vh;
+}
