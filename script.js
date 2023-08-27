@@ -18,16 +18,27 @@ const info = document.querySelector(".info")
 // request.send()
 
 
-fetch("vidhi.json").then((response) => {
-    console.log('resolved', response);
-    return response.json();
-}).then(data => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault()
-        const html = `<span>${data}</span>`
-        info.innerHTML = html
-    })
-    console.log(data)
-}).catch(err => {
-    console.log('rejected', err)
-})
+// fetch("vidhi.json").then((response) => {
+//     console.log('resolved', response);
+//     return response.json();
+// }).then(data => {
+//     button.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         const html = `<span>${data}</span>`
+//         info.innerHTML = html
+//     })
+//     console.log(data)
+// }).catch(err => {
+//     console.log('rejected', err)
+// })
+
+
+const getTodos = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/')
+    const data = await response.json
+    return data
+}
+
+getTodos()
+    .then(data => console.log('resolved: ', data))
+    .catch(err => console.log('error: ', err.message))
